@@ -25,6 +25,7 @@ class MainActivityViewModel: ViewModel() {
             val retroInstance = RetroInstance.getRetroInstance().create(RetroService::class.java)
             val response  = retroInstance.getDataFromApi("ny")
             recyclerListLiveData.postValue(response)
+
         }
     }
 }

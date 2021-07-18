@@ -15,11 +15,12 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+
     private fun setupFragment() {
-        val fragment  = RecyclerListFragment.newInstance()
+        val fragmenthost  = RecyclerListFragment.newInstance()
         val fragmentManager: FragmentManager = supportFragmentManager
         val fragmentTransaction : FragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(android.R.id.content, fragment)
+        fragmentTransaction.replace(android.R.id.content, fragmenthost)
         fragmentTransaction.commit()
     }
 }
